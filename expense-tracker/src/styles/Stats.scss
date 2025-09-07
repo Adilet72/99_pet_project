@@ -1,0 +1,36 @@
+.stats {
+  padding: 1.5rem;
+  border-radius: 14px;
+  background: #f4f9ff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    margin-bottom: 1rem;
+    color: #34495e;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 0.4rem 0;
+      color: #555;
+      font-size: 15px;
+
+      &:before {
+        content: "• ";
+        color: #3498db;
+        font-size: 18px;
+      }
+    }
+  }
+}

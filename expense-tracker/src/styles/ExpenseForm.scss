@@ -1,0 +1,36 @@
+.expense-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+
+  input, select {
+    padding: 0.6rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+
+    &:focus {
+      outline: none;
+      border-color: #3498db;
+      box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
+    }
+  }
+
+  button {
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+
+    &:hover {
+      background: #2980b9;
+      transform: scale(1.05);
+    }
+  }
+}
