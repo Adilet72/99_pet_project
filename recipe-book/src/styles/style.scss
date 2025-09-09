@@ -1,0 +1,150 @@
+/* --- Основные стили --- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #ff6f61;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+}
+
+/* --- Форма добавления рецепта --- */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.05);
+
+  input, textarea {
+    width: 100%;
+    margin: 0.7rem 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: 0.3s;
+    
+    &:focus {
+      outline: none;
+      border-color: #ff6f61;
+      box-shadow: 0 0 5px rgba(255, 111, 97, 0.3);
+    }
+  }
+
+  button {
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: 0.3s;
+
+    &:hover {
+      background: #e55b50;
+    }
+  }
+}
+
+/* --- Список рецептов --- */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+/* --- Карточка рецепта --- */
+.recipe-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  button {
+    background: #ff6f61;
+    color: white;
+    border: none;
+    margin: 0.5rem auto 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: 0.2s;
+
+    &:hover {
+      background: #e55b50;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+}
+
+/* --- Страница одного рецепта --- */
+.selected-recipe {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-top: 1rem;
+  }
+
+  ul, ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    display: block;
+    margin: 1rem auto 0;
+  }
+}
