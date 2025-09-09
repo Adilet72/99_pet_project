@@ -1,12 +1,36 @@
-# React + Vite
+# 🍳 Recipe Book
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Recipe Book Banner](https://via.placeholder.com/800x200?text=Recipe+Book)
 
-Currently, two official plugins are available:
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-17.0.2-blue)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-4.0.0-purple)](https://vitejs.dev/)
+[![Sass](https://img.shields.io/badge/Sass-1.63.6-pink)](https://sass-lang.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Recipe Book** — это современное клиентское приложение для хранения и управления рецептами. Проект построен на **React + Vite + Sass** и полностью работает в браузере, без бэкенда, используя `localStorage`.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Особенности
+
+- ✅ Добавление новых рецептов с названием, ингредиентами, шагами и фото
+- ✅ Просмотр всех рецептов в виде карточек
+- ✅ Удаление рецептов
+- ✅ Просмотр подробной информации о рецепте
+- ✅ Сохранение данных в `localStorage`
+- ✅ Адаптивный и современный дизайн
+
+---
+
+## 🛠 Технологии
+
+| Технология   | Использование               |
+| ------------ | --------------------------- |
+| React        | Построение интерфейса       |
+| Vite         | Быстрая сборка и dev-сервер |
+| Sass         | Стилизация компонентов      |
+| LocalStorage | Хранение данных без бэкенда |
+
+---
+
+## 💻 Установка и запуск
